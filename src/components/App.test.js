@@ -1,7 +1,10 @@
 import React from 'react';
 import App from './App';
 
-const wrapper = shallow(<App />);
-describe('(Component) App', () => {
 
+describe('(Component) App', () => {
+  it('should be able to render without crash', ()=>{
+    const wrapper = shallow(<App />);
+    expect(wrapper.length).toBe(1)
+  })
 });

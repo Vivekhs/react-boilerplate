@@ -45,10 +45,9 @@ module.exports = {
   // An object that configures minimum threshold enforcement for coverage results
   coverageThreshold: {
     global: {
-      branches: 50, functions: 40, lines: 40, statements: 40
-    }
+      branches: 100, functions: 100, lines: 100, statements: 100
+    },
   },
-
   // Make calling deprecated APIs throw helpful error messages
   // errorOnDeprecated: false,
 
@@ -137,7 +136,7 @@ module.exports = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: "node",
+  testEnvironment: "jsdom",
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
